@@ -23,9 +23,9 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-d9mtlb30hk(4v#y5j!mi$b3z5c+b=)+azii6afvbuy2v4sl677'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
-ALLOWED_HOSTS = ["localhost","127.0.0.1","rimon.pythonanywhere.com",]
+ALLOWED_HOSTS = []
 
 
 # Application definition
@@ -39,6 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'main',
     'user_profile',
+    'ckeditor',
 ]
 
 MIDDLEWARE = [
